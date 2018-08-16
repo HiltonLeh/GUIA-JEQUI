@@ -73,16 +73,19 @@
 
                 <EditText
                     android:id="@+id/editSearch"
+                    style="@style/Widget.AppCompat.AutoCompleteTextView"
                     android:layout_width="200dp"
                     android:layout_height="42dp"
+                    android:background="@drawable/xml_searchbox"
+                    android:hint="Pesquisa rápida..."
                     android:imeOptions="actionSearch"
                     android:lines="1"
                     android:maxLines="1"
-                    android:singleLine="true"
-                    android:background="@drawable/xml_searchbox"
-                    android:hint="Pesquisa rápida..."
                     android:paddingLeft="10dp"
-                    />
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    tools:elegantTextHeight="false"
+                    tools:style="@style/Widget.AppCompat.AutoCompleteTextView" />
 
                 <ImageView
                     android:id="@+id/ImageView01"
