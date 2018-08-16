@@ -1,10 +1,10 @@
 <resources>
     <string name="banner_ad_unit_id">5734786987698689</string>
 
-    <string name="app_name">GuiaJequi</string>
+    <string name="app_name">Guia Jequi</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_home_activiry">GuiaJequi</string>
+    <string name="title_activity_home_activiry">Guia Jequi</string>
     <string name="message">Magic Tips Message</string>
     <string name="title_activity_company_list">Company List</string>
     <string name="title_activity_company_details">Detalhes Pessoais</string>
