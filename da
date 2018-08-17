@@ -1,0 +1,36 @@
+[33mcommit edb052a52a85c4c87c80bfbd5c326f4b6729607d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Vinícius Cordeiro Santos <41962606+viniciuscsmg@users.noreply.github.com>
+Date:   Thu Aug 16 19:35:42 2018 -0300
+
+    teste
+
+[33mcommit 7b44119a0d9aaf6c5dcf1edfbd6292952e504d3b[m
+Merge: 1115cb3 17efd64
+Author: Hilton Leh <leslie_tur@yahoo.com.br>
+Date:   Thu Aug 16 19:33:19 2018 -0300
+
+    Merge branch 'master' of https://github.com/HiltonLeh/GUIA-JEQUI
+
+[33mcommit 1115cb3bc389d26d2cb898f2f50a3a1103b818d6[m
+Author: Hilton Leh <leslie_tur@yahoo.com.br>
+Date:   Thu Aug 16 19:33:10 2018 -0300
+
+    splash nova, home com logo e gradle
+
+[33mcommit 17efd647e39ef18e0077e73b2c76a993aa46d484[m
+Author: Vinícius Cordeiro Santos <41962606+viniciuscsmg@users.noreply.github.com>
+Date:   Thu Aug 16 19:14:02 2018 -0300
+
+    Alterei o icone inicial
+
+[33mcommit 27f029adbf594f813c29476b7ffa5703477ffbfd[m
+Author: Hilton Leh <leslie_tur@yahoo.com.br>
+Date:   Wed Aug 15 07:27:56 2018 -0300
+
+    versão funcional GUIA JEQUI
+
+[33mcommit 218a18db6d97fdbb08d27a231d51778e98ecf862[m
+Author: Hilton Leh <leslie_tur@yahoo.com.br>
+Date:   Tue Aug 14 21:23:00 2018 -0300
+
+    commit inicial - guia jequi
