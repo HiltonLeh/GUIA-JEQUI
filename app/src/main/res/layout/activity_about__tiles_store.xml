@@ -51,18 +51,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:gravity="center" >
+                android:gravity="center">
 
                 <ImageView
                     android:id="@+id/imageView1"
                     android:layout_width="180dp"
                     android:layout_height="90dp"
-                    android:maxHeight="6dp"
-                    android:maxWidth="6dp"
-                    android:src="@drawable/ic_launcher"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="45dp" />
+                    android:layout_marginTop="45dp"
+                    android:maxHeight="6dp"
+                    android:maxWidth="6dp"
+                    android:src="@drawable/ic_launcher" />
 
             </RelativeLayout>
 
