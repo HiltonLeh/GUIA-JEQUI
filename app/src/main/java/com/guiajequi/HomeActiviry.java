@@ -16,18 +16,19 @@ import android.view.Window;
 import android.view.inputmethod.EditorInfo;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 import android.widget.Toast;
 
 import com.androidquery.AQuery;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
+
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
@@ -41,6 +42,7 @@ import org.json.JSONObject;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
@@ -56,7 +58,7 @@ public class HomeActiviry extends BaseActivity implements OnClickListener {
 	private ImageLoadingListener animateFirstListener = new AnimateFirstDisplayListener();
 
 	int Count=0;
-	Button btn, btnInfo;
+	Button btn;
 	
 	List<HashMap<String,String>> list;
 	ArrayList<HashMap<String, String>> compList = new ArrayList<HashMap<String,String>>();
@@ -76,11 +78,6 @@ public class HomeActiviry extends BaseActivity implements OnClickListener {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.home);
 
-		// Look up the AdView as a resource and load a request.
-		AdView mAdView = (AdView) findViewById(R.id.adView);
-		AdRequest adRequest = new AdRequest.Builder().build();
-		mAdView.loadAd(adRequest);
-		// adView.loadAd(new AdRequest());
 
 		cd = new ConnectionDetector(getApplicationContext());
 		settings = getSharedPreferences(PREFS_NAME, 0);
@@ -103,26 +100,15 @@ public class HomeActiviry extends BaseActivity implements OnClickListener {
         
 		progressBar = (View)findViewById(R.id.progressBarView);
 		progressBar.setVisibility(View.GONE);
-		
-        btnInfo = (Button)findViewById(R.id.btnInfo);
-        btnInfo.setOnClickListener(new OnClickListener() {
-			
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent 
-				intent=new Intent(HomeActiviry.this,About_TilesStore.class);
-				startActivity(intent);
-			}
-		});
-		Button btnAddPost = (Button)findViewById(R.id.btnAddPost);
-		btnAddPost.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				Intent
-						intent=new Intent(HomeActiviry.this,AddPost.class);
-				startActivity(intent);
-			}
-		});
+
+		Spinner spinner = (Spinner) findViewById(R.id.spinnerCidade);
+		List<String> cidades = new ArrayList<>(Arrays.asList("CAPELINHA-MG","MINAS NOVAS-MG","TURMALINA-MG","VEREDINHA-MG"));
+		ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,
+				android.R.layout.simple_spinner_item, cidades );
+		dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+		spinner.setAdapter(dataAdapter);
+
         
         try {
 			compList = (ArrayList<HashMap<String,String>>) ObjectSerializer.deserialize(settings.getString(ConstValue.PREF_MAINMENU, ObjectSerializer.serialize(new ArrayList<HashMap<String,String>>())));		
@@ -158,14 +144,12 @@ public class HomeActiviry extends BaseActivity implements OnClickListener {
 			            actionId == EditorInfo.IME_ACTION_DONE ||
 			            event.getAction() == KeyEvent.ACTION_DOWN &&
 			            event.getKeyCode() == KeyEvent.KEYCODE_ENTER) {
-			        //if (!event.isShiftPressed()) {
-			           // the user is done typing. 
-			        	//ConstValue.SEARCH_TEXT = txtSearch.getText().toString();
+
 			        	Intent intent = new Intent(HomeActiviry.this,CompanyMain.class);
 						intent.putExtra("search", txtSearch.getText().toString());
 			        	startActivity(intent);
 			           return true; // consume.
-			        //}                
+
 			    }
 			    return false; // pass on to other listeners. 
 			}
@@ -188,12 +172,7 @@ public class HomeActiviry extends BaseActivity implements OnClickListener {
 		intent=new Intent(this,Categories.class);
 		startActivity(intent);
     }
-    public void addPostActivity()
-    {
-    	Intent intent = new Intent(this,AddPost.class);
-    	startActivity(intent);
-    	
-    }
+
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
 		Intent intent=null;
