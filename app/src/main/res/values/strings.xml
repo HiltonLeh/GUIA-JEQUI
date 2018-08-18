@@ -19,7 +19,14 @@
     <string name="title_activity_add_post">Add Post</string>
     <string name="title_activity_add_post2">Add Post Step 2</string>
     <string name="title_activity_add_post3">Add Post Step3</string>
-<string name="aboutapp">Aplicativo GUIA JEQUI, um serviço que vai ajudar você a encontrar comércios e serviços da região do Jequitinhonha, e proporciona ao comerciante a oportunidade de apresentar sua empresa, produtos ou serviços de forma prática e efetiva.</string>
-<string name="about2">Você poderá contar com um serviço de qualidade criado especialmente pra você</string>
-<string name="aboutcity">Selecione a cidade padrão para as buscas do GUIA JEQUI:</string>
+    <string name="aboutapp">Aplicativo GUIA JEQUI, um serviço que vai ajudar você a encontrar comércios e serviços da região do Jequitinhonha, e proporciona ao comerciante a oportunidade de apresentar sua empresa, produtos ou serviços de forma prática e efetiva.</string>
+    <string name="about2">Você poderá contar com um serviço de qualidade criado especialmente pra você</string>
+    <string name="aboutcity">Selecione a cidade padrão para as buscas do GUIA JEQUI:</string>
+    <string name="linguagem_prompt">Escolha uma cidade</string>
+    <string-array name="linguagens">
+        <item>CAPELINHA-MG</item>
+        <item>MINAS NOVAS-MG</item>
+        <item>TURMALINA-MG</item>
+        <item>VEREDINHA-MG</item>
+    </string-array>
 </resources>

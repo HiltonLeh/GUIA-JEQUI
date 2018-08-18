@@ -13,33 +13,6 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             layout="@layout/progressbar_view" />
-     <Button
-         android:id="@+id/btnInfo"
-         android:layout_width="30dp"
-         android:layout_height="30dp"
-         android:layout_alignParentRight="true"
-         android:layout_alignParentTop="true"
-         android:background="@drawable/btn_info" />
-
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        ads:adSize="BANNER"
-        android:layout_alignParentBottom="true"
-        ads:adUnitId="@string/banner_ad_unit_id"
-        android:visibility="invisible">
-    </com.google.android.gms.ads.AdView>
-
-    <Button
-        android:id="@+id/btnAddPost"
-        android:layout_width="110dp"
-        android:layout_height="40dp"
-        android:background="@drawable/btn_add_post2"
-        android:visibility="invisible"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -48,15 +21,14 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
-        <LinearLayout
-    android:focusable="true" android:focusableInTouchMode="true"
-    android:layout_width="0px" android:layout_height="0px"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingTop="50dp"
-            android:paddingBottom="10dp" >
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
 
             <ImageView
                 android:id="@+id/imageView1"
@@ -64,9 +36,70 @@
                 android:layout_height="83dp"
                 android:src="@drawable/logo_05" />
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:padding="10dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/img_thumb1"
+                        android:layout_width="95dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:cropToPadding="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/teste" />
+
+                    <ImageView
+                        android:id="@+id/img_thumb2"
+                        android:layout_width="95dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:cropToPadding="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/teste" />
+
+                    <ImageView
+                        android:id="@+id/img_thumb3"
+                        android:layout_width="95dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:cropToPadding="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/teste" />
+
+                    <ImageView
+                        android:id="@+id/img_thumb4"
+                        android:layout_width="95dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:cropToPadding="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/teste" />
+
+                </TableRow>
+            </LinearLayout>
 
             <LinearLayout
-                android:layout_width="384dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:gravity="center_horizontal"
@@ -74,16 +107,18 @@
 
                 <Spinner
                     android:id="@+id/spinnerCidade"
-                    android:layout_width="348dp"
-                    android:layout_height="42dp"
-                    android:hint="Selecione a cidade padrão." />
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:prompt="@string/linguagem_prompt" />
             </LinearLayout>
+
             <LinearLayout
-                android:layout_width="384dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:gravity="center_horizontal"
-                android:padding="10dp">
+                android:padding="8dp">
 
                 <EditText
                     android:id="@+id/editSearch"
@@ -109,55 +144,6 @@
                     android:src="@drawable/search_icons_091" />
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="384dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center_horizontal"
-                android:padding="10dp">
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center_horizontal"
-                    android:gravity="center_horizontal"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/img_thumb1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:cropToPadding="true"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/teste" />
-
-                    <ImageView
-                        android:id="@+id/img_thumb2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:cropToPadding="true"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/teste" />
-
-                    <ImageView
-                        android:id="@+id/img_thumb3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:cropToPadding="true"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/teste" />
-
-                </TableRow>
-            </LinearLayout>
         </LinearLayout>
 
         <GridView
