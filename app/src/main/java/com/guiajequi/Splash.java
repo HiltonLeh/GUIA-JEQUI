@@ -45,7 +45,7 @@ public class Splash extends BaseActivity {
 	                 
 	                try {
 	                    // Thread will sleep for 5 seconds
-	                    sleep(2*1000);
+	                    sleep(1*1000);
 	                    //Remove activity
 	                    Intent intent = new Intent(Splash.this,HomeActiviry.class);
 	            		startActivity(intent);
