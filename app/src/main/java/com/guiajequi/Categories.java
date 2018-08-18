@@ -177,7 +177,7 @@ public class Categories extends FragmentActivity implements OnItemClickListener,
 					
 				}else
 				{
-					Toast.makeText(getApplicationContext(), "Please connect mobile with working Internet", Toast.LENGTH_LONG).show();
+					Toast.makeText(getApplicationContext(), "Por favor, conecte o seu celular a rede!", Toast.LENGTH_LONG).show();
 				}
 					
 				// TODO Auto-generated method stub
