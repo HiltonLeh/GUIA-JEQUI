@@ -17,13 +17,24 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    buildscript {
+        ext {
+            play_version = '15.0.0'
+        }
+    }
+
     useLibrary 'org.apache.http.legacy'
 }
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
+    //Havia adicionado a mando do Firebase, revisar
+    //noinspection GradleCompatible
+    implementation 'com.google.firebase:firebase-core:16.0.0'
+    implementation 'com.google.firebase:firebase-messaging:17.3.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
     //noinspection GradleCompatible,GradleCompatible
-    compile 'com.android.support:appcompat-v7:23.4.0'
-    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
-    compile 'com.google.android.gms:play-services:8.3.0'
+    implementation 'com.android.support:appcompat-v7:23.4.0'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    //compile 'com.google.android.gms:play-services:8.3.0'
 }
+apply plugin: 'com.google.gms.google-services'

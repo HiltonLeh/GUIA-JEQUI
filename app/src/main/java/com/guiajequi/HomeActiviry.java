@@ -2,9 +2,12 @@ package com.guiajequi;
 
 
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -29,6 +32,7 @@ import android.widget.Toast;
 
 import com.androidquery.AQuery;
 
+import com.guiajequi.main.Constants;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
@@ -72,11 +76,24 @@ public class HomeActiviry extends BaseActivity implements OnClickListener {
 	View progressBar;
 	
 	EditText txtSearch;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.home);
+
+
+		if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+			NotificationManager mNotificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+			NotificationChannel mChannel = new NotificationChannel(Constants.CHANNEL_ID, Constants.CHANNEL_NAME, NotificationManager.IMPORTANCE_HIGH);
+			mChannel.setDescription(Constants.CHANNEL_DESCRIPTION);
+			mChannel.enableLights(true);
+			mChannel.setLightColor(Color.RED);
+			mChannel.enableVibration(true);
+			mChannel.setVibrationPattern(new long[]{100, 200, 300, 400, 500, 400, 300, 200, 400});
+			mNotificationManager.createNotificationChannel(mChannel);
+		}
 
 
 		cd = new ConnectionDetector(getApplicationContext());
