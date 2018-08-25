@@ -1,0 +1,105 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.guiajequi.MainActivity_TABSEG$PlaceholderFragment">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="0dp"
+        android:layout_height="86dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginStart="1dp"
+        android:paddingBottom="6dp"
+        android:src="@drawable/logo_05"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/todo" />
+
+
+    <Spinner
+        android:id="@+id/spinnerCidadeLocais"
+        android:layout_width="0dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginStart="12dp"
+        android:focusable="true"
+        android:gravity="center"
+        android:prompt="@string/linguagem_prompt"
+        android:spinnerMode="dialog"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/logo"
+        app:layout_constraintStart_toStartOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+
+    <EditText
+        android:id="@+id/editSearchLocais"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/xml_searchbox"
+        android:hint="@string/pesquisa_rapida"
+        android:imeOptions="actionSearch"
+        android:lines="1"
+        android:maxLines="1"
+        android:padding="7dp"
+        android:singleLine="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        app:layout_constraintEnd_toStartOf="@+id/ImageView01Locais"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCidadeLocais"
+        tools:elegantTextHeight="false"
+        tools:style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:inputType="" />
+
+    <ImageView
+        android:id="@+id/ImageView01Locais"
+
+        android:layout_width="33dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:contentDescription="@string/todo"
+        android:padding="0dp"
+        android:scaleType="fitEnd"
+        android:src="@drawable/search_icons_091"
+        app:layout_constraintBottom_toBottomOf="@+id/editSearchLocais"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editSearchLocais"
+        app:layout_constraintTop_toTopOf="@+id/editSearchLocais" />
+
+
+    <GridView
+        android:id="@+id/gridView1Locais"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:paddingBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ImageView01Locais"
+        app:layout_constraintStart_toStartOf="@+id/editSearchLocais"
+        app:layout_constraintTop_toBottomOf="@+id/editSearchLocais"></GridView>
+
+
+</android.support.constraint.ConstraintLayout>
