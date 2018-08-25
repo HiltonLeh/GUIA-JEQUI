@@ -2,6 +2,7 @@
     <string name="banner_ad_unit_id">5734786987698689</string>
 
     <string name="app_name">Guia Jequi</string>
+    <string name="app_name_vazio">     </string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_home_activiry">Guia Jequi</string>
@@ -9,7 +10,7 @@
     <string name="title_activity_company_list">Company List</string>
     <string name="title_activity_company_details">Detalhes Pessoais</string>
     <string name="title_activity_inquiry">Contato</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Configurações</string>
     <string name="title_activity_company_main">CompanyMain</string>
     <string name="title_activity_map">MapActivity</string>
     <string name="title_activity_about__tiles_store">Sobre</string>
@@ -23,10 +24,20 @@
     <string name="about2">Você poderá contar com um serviço de qualidade criado especialmente pra você</string>
     <string name="aboutcity">Selecione a cidade padrão para as buscas do GUIA JEQUI:</string>
     <string name="linguagem_prompt">Escolha uma cidade</string>
-    <string-array name="linguagens">
+    <string-array name="cidadesmg">
         <item>CAPELINHA-MG</item>
         <item>MINAS NOVAS-MG</item>
         <item>TURMALINA-MG</item>
         <item>VEREDINHA-MG</item>
     </string-array>
+    <string name="title_activity_main_tabs">MainActivityTabs</string>
+    <string name="tab_text_1">Locais</string>
+    <string name="tab_text_2">Informações</string>
+    <string name="tab_text_3">Promoções</string>
+    <string name="tab_text_4">Sobre</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_main_tabsegund">MainActivityTABSEGUNDA</string>
+    <string name="title_activity_main__tabseg">MainActivity_TABSEG</string>
+    <string name="pesquisa_rapida">Pesquisa rápida...</string>
+    <string name="todo">TODO</string>
 </resources>

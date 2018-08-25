@@ -6,7 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.NotificationCompat;
 
-import com.guiajequi.HomeActiviry;
+import com.guiajequi.MainActivity_TABSEG;
 import com.guiajequi.R;
 
 /**
@@ -45,7 +45,7 @@ public class Constants {
             .setContentTitle(title)
             .setContentText(body);
     
-            Intent intent = new Intent(mCtx, HomeActiviry.class);
+            Intent intent = new Intent(mCtx, MainActivity_TABSEG.class);
     
             PendingIntent pendingIntent = PendingIntent.getActivity(mCtx, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
     

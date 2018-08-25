@@ -310,7 +310,7 @@ public class CompanyDetails extends BaseActivity implements OnClickListener,Imag
 			finish();
 			break;
 		case R.id.button1:
-			intent=new Intent(CompanyDetails.this,HomeActiviry.class);
+			intent=new Intent(CompanyDetails.this,MainActivity_TABSEG.class);
 			overridePendingTransition(R.anim.animation_enter,R.anim.animation_leave);
 			break;
 		case R.id.buttonPlayStore:
@@ -346,7 +346,7 @@ public class CompanyDetails extends BaseActivity implements OnClickListener,Imag
 	//		intent.putExtra("company_detail", companyMap);
 	//		break;
 		case R.id.btnhome:
-			Intent intent1=new Intent(CompanyDetails.this,HomeActiviry.class);
+			Intent intent1=new Intent(CompanyDetails.this,MainActivity_TABSEG.class);
 			startActivity(intent1);
 			overridePendingTransition(R.anim.animation_enter,R.anim.animation_leave);
 			break;

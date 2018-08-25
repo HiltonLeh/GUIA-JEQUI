@@ -10,6 +10,7 @@ android {
         targetSdkVersion 26
         versionCode 4
         versionName "1.0.3"
+
     }
     buildTypes {
         release {
@@ -26,6 +27,9 @@ android {
     useLibrary 'org.apache.http.legacy'
 }
 dependencies {
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     //Havia adicionado a mando do Firebase, revisar
     //noinspection GradleCompatible
     implementation 'com.google.firebase:firebase-core:16.0.0'
