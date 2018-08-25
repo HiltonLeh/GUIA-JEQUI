@@ -31,7 +31,9 @@
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:tabGravity="fill"
             app:tabIndicatorColor="@color/white"
+            app:tabMode="scrollable"
             app:tabTextAppearance="@style/TextAppearance.AppCompat.Button">
 
             <android.support.design.widget.TabItem

@@ -5,7 +5,6 @@
     <string name="app_name_vazio">     </string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_home_activiry">Guia Jequi</string>
     <string name="message">Magic Tips Message</string>
     <string name="title_activity_company_list">Company List</string>
     <string name="title_activity_company_details">Detalhes Pessoais</string>
@@ -32,12 +31,11 @@
     </string-array>
     <string name="title_activity_main_tabs">MainActivityTabs</string>
     <string name="tab_text_1">Locais</string>
-    <string name="tab_text_2">Informações</string>
+    <string name="tab_text_2">Notícias</string>
     <string name="tab_text_3">Promoções</string>
     <string name="tab_text_4">Sobre</string>
     <string name="section_format">Hello World from section: %1$d</string>
-    <string name="title_activity_main_tabsegund">MainActivityTABSEGUNDA</string>
-    <string name="title_activity_main__tabseg">MainActivity_TABSEG</string>
+    <string name="title_activity_main">Guia Jequi</string>
     <string name="pesquisa_rapida">Pesquisa rápida...</string>
     <string name="todo">TODO</string>
 </resources>
