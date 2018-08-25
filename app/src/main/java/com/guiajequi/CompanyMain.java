@@ -152,7 +152,7 @@ public class CompanyMain extends FragmentActivity implements OnClickListener {
 		{
 		
 		case R.id.btnhome:
-			Intent intent=new Intent(CompanyMain.this,MainActivity_TABSEG.class);
+			Intent intent=new Intent(CompanyMain.this,MainActivity.class);
 			startActivity(intent);
 			overridePendingTransition(R.anim.animation_enter,R.anim.animation_leave);
 			break;

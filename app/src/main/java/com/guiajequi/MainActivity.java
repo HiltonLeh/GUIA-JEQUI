@@ -1,8 +1,6 @@
 package com.guiajequi;
 
 import android.support.design.widget.TabLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.support.v4.app.Fragment;
@@ -10,16 +8,11 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-
-import android.widget.TextView;
 
 
-public class MainActivity_TABSEG extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -42,7 +35,7 @@ public class MainActivity_TABSEG extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main__tabseg);
+        setContentView(R.layout.activity_main);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -110,7 +103,7 @@ public class MainActivity_TABSEG extends AppCompatActivity {
                     Tab1Locais tab1 = new Tab1Locais();
                     return tab1;
                 case 1:
-                    Tab2Informacoes tab2 = new Tab2Informacoes();
+                    Tab2Noticias tab2 = new Tab2Noticias();
                     return tab2;
                 case 2:
                     Tab3Promocoes tab3 = new Tab3Promocoes();
@@ -138,7 +131,7 @@ public class MainActivity_TABSEG extends AppCompatActivity {
                     return "LOCAIS";
                 case 1:
 
-                    return "INFORMAÇÕES";
+                    return "NOTÍCIAS";
                 case 2:
 
                     return "PROMOÇÕES";

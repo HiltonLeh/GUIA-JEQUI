@@ -51,7 +51,7 @@
         </service>
         <activity
             android:name="com.guiajequi.Splash"
-            android:label="@string/title_activity_main__tabseg"
+            android:label="@string/title_activity_main"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -96,8 +96,8 @@
             android:label="@string/title_activity_show_route" >
         </activity>
         <activity
-            android:name=".MainActivity_TABSEG"
-            android:label="@string/title_activity_main__tabseg"
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden">
 
