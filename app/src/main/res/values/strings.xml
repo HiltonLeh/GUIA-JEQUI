@@ -1,7 +1,7 @@
 <resources>
     <string name="banner_ad_unit_id">5734786987698689</string>
 
-    <string name="app_name">Guia Jequi</string>
+    <string name="app_name">+ DO VALE</string>
     <string name="app_name_vazio">     </string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
@@ -19,7 +19,7 @@
     <string name="title_activity_add_post">Add Post</string>
     <string name="title_activity_add_post2">Add Post Step 2</string>
     <string name="title_activity_add_post3">Add Post Step3</string>
-    <string name="aboutapp">Aplicativo GUIA JEQUI, um serviço que vai ajudar você a encontrar comércios e serviços da região do Jequitinhonha, e proporciona ao comerciante a oportunidade de apresentar sua empresa, produtos ou serviços de forma prática e efetiva.</string>
+    <string name="aboutapp">O MAIS DO VALE é um serviço que vai ligar o campo ao comércio, facilitando a oferta de produtos e direcionando à demanda. Com isso, proporcionará ao comerciante a oportunidade de conhecer aquilo que sua região tem de melhor e ao produtor a oferta com amplo alcance, maximizando assim a força da agricultura e do comércio regional.</string>
     <string name="about2">Você poderá contar com um serviço de qualidade criado especialmente pra você</string>
     <string name="aboutcity">Selecione a cidade padrão para as buscas do GUIA JEQUI:</string>
     <string name="linguagem_prompt">Escolha uma cidade</string>
@@ -35,7 +35,7 @@
     <string name="tab_text_3">Promoções</string>
     <string name="tab_text_4">Sobre</string>
     <string name="section_format">Hello World from section: %1$d</string>
-    <string name="title_activity_main">Guia Jequi</string>
+    <string name="title_activity_main">+ DO VALE</string>
     <string name="pesquisa_rapida">Pesquisa rápida...</string>
     <string name="todo">TODO</string>
 </resources>
