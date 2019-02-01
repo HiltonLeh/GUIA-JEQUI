@@ -31,6 +31,7 @@ dependencies {
     implementation 'com.android.support:design:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     //Havia adicionado a mando do Firebase, revisar
+    //
     //noinspection GradleCompatible
     implementation 'com.google.firebase:firebase-core:16.0.0'
     implementation 'com.google.firebase:firebase-messaging:17.3.0'
