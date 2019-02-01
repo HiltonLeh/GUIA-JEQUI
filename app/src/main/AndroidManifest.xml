@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.guiajequi" >
+    package="com.guiajequi">
+
     <uses-permission android:name="com.way.tilesstore.permission.MAPS_RECEIVE" />
+
     <permission
         android:name="com.guiajequi.permission.MAPS_RECEIVE"
-        android:protectionLevel="signature"
-         />
+        android:protectionLevel="signature" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -15,7 +16,7 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <!--<uses-permission android:name="android.permission.READ_LOGS" />-->
+    <!-- <uses-permission android:name="android.permission.READ_LOGS" /> -->
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
 
     <application
@@ -23,8 +24,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        >
+        android:theme="@style/AppTheme">
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyBNpQaH0lqk5v3tiDdrOeAgjrVkpd8P2Q0" />
@@ -32,76 +32,65 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <!--<activity-->
-            <!--android:name="com.google.android.gms.ads.AdActivity"-->
-            <!--android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"-->
-            <!--android:theme="@android:style/Theme.Translucent" />-->
+        <!-- <activity -->
+        <!-- android:name="com.google.android.gms.ads.AdActivity" -->
+        <!-- android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" -->
+        <!-- android:theme="@android:style/Theme.Translucent" /> -->
 
-        <service
-            android:name=".MyFirebaseInstanceIdService">
+        <service android:name=".MyFirebaseInstanceIdService">
             <intent-filter>
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
-        <service
-            android:name=".MyFirebaseMessagingService">
+        <service android:name=".MyFirebaseMessagingService">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+
         <activity
-            android:name="com.guiajequi.Splash"
+            android:name=".Splash"
             android:label="@string/title_activity_main"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
-            android:name="com.guiajequi.CompanyDetails"
+            android:name=".CompanyDetails"
             android:label="@string/title_activity_company_details"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
-            android:name="com.guiajequi.Inquiry"
+            android:name=".Inquiry"
             android:label="@string/title_activity_inquiry"
-            android:screenOrientation="portrait" >
-        </activity>
-
+            android:screenOrientation="portrait"></activity>
         <activity
-            android:name="com.guiajequi.CompanyMain"
+            android:name=".CompanyMain"
             android:label="@string/title_activity_company_main"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
-        <!--<activity-->
-            <!--android:name="com.guiajequi.MapActivity"-->
-            <!--android:label="@string/title_activity_map" >-->
-        <!--</activity>-->
-
+            android:windowSoftInputMode="stateHidden"></activity>
+        <!-- <activity -->
+        <!-- android:name="com.guiajequi.MapActivity" -->
+        <!-- android:label="@string/title_activity_map" > -->
+        <!-- </activity> -->
 
         <activity
-            android:name="com.guiajequi.About_TilesStore"
-            android:label="@string/title_activity_about__tiles_store" >
-        </activity>
+            android:name=".About_TilesStore"
+            android:label="@string/title_activity_about__tiles_store"></activity>
         <activity
-            android:name="com.guiajequi.Categories"
-            android:label="@string/title_activity_categories" >
-        </activity>
+            android:name=".Categories"
+            android:label="@string/title_activity_categories"></activity>
         <activity
-            android:name="com.guiajequi.ShowRoute"
-            android:label="@string/title_activity_show_route" >
-        </activity>
+            android:name=".ShowRoute"
+            android:label="@string/title_activity_show_route"></activity>
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="stateHidden">
-
-        </activity>
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".detalheNoticia"></activity>
     </application>
 
 </manifest>
